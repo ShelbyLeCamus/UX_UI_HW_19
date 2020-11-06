@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  background-color:#F2E8D5;
+}
+
+p ,li, h2, h3, h4{
+  font-family: 'Kufam', cursive;
+}
+
+h1{
+  font-family: 'Bungee Shade', cursive;
+  Color:white;
+}
+
+
+header {
+  background-color: #B97C5E;
+  padding: 15px;
+}
+header ul {
+  float: right;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.hero-bkg-animated {
+  background: gray url("../images/background.png") repeat 0 0;
+  width: 100%;
+  margin: 0;
+  padding: 100px 15px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-animation: slide 60s linear infinite;
+}
+
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1850px 0; }
+}
+
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #B97C5E;
+  text-align: center;
+  color: white;
+}
+
+
+
+button {
+  padding: 15px;
+  background-color: #032F3C;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.mySkills h1, .myWork h1 {
+  text-align: center;
+  background-color:#B97C5E;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*<!--  My UX Skills section coded using CSS flex -->*/
+
+.flexContainer {
+ display: flex;
+ flex-direction: row;
+ margin: 0 5px;
+}
+
+.skillsBox {
+  padding: 2%;
+  margin: 0 20px;
+  text-align: center;
+  grid-template-rows: 1fr;
+  background-color: #B97C5E;
+  color:white;
+}
+
+.skillsBox img {
+  width: 20%;
+}
+
+/*<!--  My UX Skills section coded using CSS Grid -->}*/
+.workGrid {
+  margin: 0 5px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "projectImageOne projectDetailsOne"
+  "projectImageTwo projectDetailsTwo"
+  "projectImageThree projectDetailsThree";
+}
+
+#projectImageOne {
+  grid-area: projectImageOne;
+}
+#projectImageTwo {
+  grid-area: projectImageTwo;
+}
+#projectImageThree {
+  grid-area: projectImageThree;
+}
+#projectDetailsOne {
+  grid-area: projectDetailsOne;
+}
+#projectDetailsTwo {
+  grid-area: projectDetailsTwo;
+}
+#projectDetailsThree {
+  grid-area: projectDetailsThree;
+}
+
+.myWork h3 {
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #8c483A;
+    padding: 2%;
+
+  }
+  .skillsBox {
+    width: 100%;
+    width: 100%; 
+    padding: 0%; 
+    margin: 0px;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "projectImageOne" 
+    "projectDetailsOne" 
+    "projectImageTwo" 
+    "projectDetailsTwo" 
+    "projectImageThree" 
+    "projectDetailsThree";
+  }
+}
+
+
+
+.projectImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px;
+  background-color: #B97C5E;
+}
+
+.projectDetails {
+  margin: 20px 20px;
+}
+
+
+
+footer {
+  background-color:#B97C5E;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+

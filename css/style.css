@@ -78,6 +78,10 @@ button {
   border-radius: 4px;
 }
 
+button a {
+  color: white;
+}
+
 .mySkills h1, .myWork h1 {
   text-align: center;
   background-color:#B97C5E;
@@ -179,6 +183,10 @@ button {
   justify-content: center;
   margin: 20px 20px;
   background-color: #B97C5E;
+}
+
+.projectImage img{
+  width: 100%;
 }
 
 .projectDetails {
